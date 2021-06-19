@@ -1,0 +1,204 @@
+/*
+    Estilo do site playmoovie
+*/
+
+:root {
+    --purple: #9c27b0;
+}
+
+body {
+    font-size: 14px;
+}
+
+/*
+    Estilo do Header/menu
+*/
+
+nav.navbar {
+    background: var(--purple);
+}
+nav.navbar img {
+    max-width: 200px;
+}
+
+/*
+    Estilo Carrousel
+*/
+#lancamentos {
+    background: #f2f2f2;
+    padding-bottom: 30px;
+}
+
+/* 
+Estilo Avaliacoes 
+*/
+
+#avaliacoes figure {
+    flex: 0 0 80px;
+    margin-right: 20px;
+}
+#avaliacoes figure img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+/* 
+Estilo Entrevistas 
+*/
+
+#entrevistas {
+    background: #ffe7ff;
+}
+
+.entrevista-container p {
+    margin-bottom: 1px;
+}
+
+/* 
+Estilo extras 
+*/
+
+#novidades figure img {
+    object-fit: cover;
+}
+
+.social-icons {
+    font-size: 2rem;
+}
+
+.social-icons a {
+    margin-right: 1rem;
+}
+.social-icons a:last-child {
+    margin-right: 0;
+}
+#editorial {
+    margin-top: 3rem;
+}
+
+/* 
+Estilo rodapé
+*/
+
+footer {
+    background: #f0f0f0;
+}
+footer figure {
+    max-width: 100px;
+}
+footer figure img {
+    width: 100%;
+    object-fit: contain;
+}
+
+/*
+Botoes
+*/
+.btn-primary {
+    background-color: var(--purple);
+    border-color: var(--purple);
+}
+.bg-primary {
+    background-color: var(--purple) !important;
+}
+
+a {
+    color: var(--purple);
+}
+
+.lista-filmes .filme {
+    padding: 10px;
+    border: 1px solid #d0d0d0;
+    min-height: 394px;
+    display: block;
+    text-decoration: none;
+    color: #000;
+    transition: 0.3s;
+    height: 100%;
+}
+
+.lista-filmes .filme:hover {
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.4);
+}
+
+.lista-filmes .filme h6 {
+    margin-top: 1em;
+}
+
+.lista-filmes .filme p {
+    font-size: 0.8em;
+}
+
+/*
+    Página de detalhes do filme
+*/
+
+#filme-capa {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    /* height: 80vh; */
+}
+
+#filme-capa::before {
+    content: "";
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    /* background: red; */
+    background: linear-gradient(
+        0deg,
+        rgba(0, 0, 0, 0.85) 0%,
+        rgba(0, 0, 0, 0.3323704481792717) 85%
+    );
+    /* opacity: 0.3; */
+    /* z-index: 1; */
+}
+
+#filme-capa img {
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#filme-capa .info {
+    /* margin-top: auto; */
+    margin-top: 50vh;
+    position: relative;
+    color: #ffffffbb;
+    padding: 2rem;
+    max-width: 700px;
+    font-size: 1.3rem;
+    /* z-index: 2; */
+}
+
+#filme-capa .info h1 {
+    margin-bottom: 2rem;
+    font-size: 5rem;
+}
+
+#filme-capa .classificacao {
+    margin-bottom: 1rem;
+    font-size: 0.8em;
+}
+
+.filme figure {
+    aspect-ratio: 1/1.42;
+}
+
+.filme figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.lista-filmes {
+    align-items: stretch;
+}
