@@ -145,7 +145,7 @@ if (isPage("/filme")) {
       srcset=""
     />
     <div class="info">
-      <h1>${filme.title}</h1>
+      <h2>${filme.title}</h2>
       <div class="classificacao">
         <span>${
             filme.release_date
