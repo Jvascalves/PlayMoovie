@@ -73,7 +73,8 @@ campoBusca.addEventListener("keydown", (evento) => {
 });
 
 campoBusca.addEventListener("search", (evento) => {
-    // evento.preventDefault();
+    let textoDaBusca = campoBusca.value;
+    evento.preventDefault();
     window.open("busca.html?busca=" + textoDaBusca, "_self");
 });
 
