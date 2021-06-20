@@ -73,8 +73,14 @@ campoBusca.addEventListener("keydown", (evento) => {
 });
 
 campoBusca.addEventListener("search", (evento) => {
+    if (evento.code === "Lupa") {
+        let textoDaBusca = campoBusca.value;
+
+        window.open("busca.html?busca=" + textoDaBusca, "_self");
+    }
+
     // evento.preventDefault();
-    window.open("busca.html?busca=" + textoDaBusca, "_self");
+    // window.open("busca.html?busca=" + textoDaBusca, "_self");
 });
 
 /**
